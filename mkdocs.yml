@@ -1,0 +1,5 @@
+site_name: ReadTheDocs
+
+nav:
+  - Home: 'index.md'
+    - 'Install our Bot': 'install.md'
