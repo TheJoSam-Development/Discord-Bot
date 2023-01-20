@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "main",
+            "level": "NOTSET",
+            "stream": "ext://sys.stdout"
+        },
+        "file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "formatter": "main",
+            "filename": "logs/latest.log",
+            "maxBytes": 0,
+            "backupCount": 10000
+        }
+    },
+    "formatters":{
+        "main": {
+            "format": "[%(asctime)s][%(module)s][%(levelname)s]%(message)s",
+            "datefmt": "%H:%M:%S|%d/%m/%Y(%z)"
+        }
+    },
+    "loggers": {
+        "": {
+            "handlers": ["console", "file"],
+            "level": "NOTSET",
+            "propagate": true
+        }
+    }
+}
