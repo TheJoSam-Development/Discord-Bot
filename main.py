@@ -37,8 +37,7 @@ if EXTENSIONS != []:
             logger.error('Failed to load extension: ' + extension)
             logger.error(e)
 
-
-# ## Does not function yet ##
+# ## Does not function yet ## / ## This was changed please use current version below ##
 #command_list = command_loader.scan_commands_dir()
 #if command_list != []:
 #    for command in command_list:
@@ -47,6 +46,11 @@ if EXTENSIONS != []:
 #        except Exception as e:
 #            logger.error(f'Failed to load command: {command}')
 #            logger.error(e)
+
+scanned_dir = command_loader.scan_dir()
+command_list = scanned_dir[0]
+meta_list = scanned_dir[1]
+command_loader.load_commands(bot, command_list, meta_list)
 
 @bot.command()
 async def ping(ctx):

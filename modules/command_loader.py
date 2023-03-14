@@ -2,6 +2,7 @@ import discord
 from discord.ext import bridge
 import os
 import datetime
+import json
 
 from modules import config_loader
 config = config_loader.get_config(cfg_name = 'commands')
@@ -26,6 +27,17 @@ def scan_dir():
             meta_list.append(f'meta.{meta_file[:-8]}')
     return command_list, meta_list
 
+
+def load_commands(bot, command_list: list, meta_file_list: list):
+    """
+    Loads all commands that are in the Commands Folder and combine them with their metas
+    
+    Args:
+        bot: Discord Bot instance
+    """
+    for command in command_list:
+        bot.load_extension(command)
+        print('Loaded ' + command)
 
 
 if __name__ == '__main__':
