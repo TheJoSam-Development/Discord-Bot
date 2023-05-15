@@ -1,3 +1,6 @@
 *.code-workspace
 *.log
 *.key
+*.pyc
+ignore/*.*
+.vscode/*
