@@ -4,64 +4,29 @@ from discord.ext import bridge
 import json
 import logging
 import logging.config
-import os
-
-from modules import token_setup
-from modules import command_loader
+from os import path
 
 CONFIG_FILE_PATH = './config/main.cfg'
-EXTENSIONS = []
 
-if os.path.exists(CONFIG_FILE_PATH):
+if __name__ != '__main__': raise RuntimeError('Main.py cannot be imported or run as subprocess')
+
+if path.exists(CONFIG_FILE_PATH):
     config = configparser.ConfigParser()
     config.read(CONFIG_FILE_PATH)
 
-logging.config.dictConfig(json.loads(open(config.get('Paths', 'logger_cfg-file_path'), 'r').read()))
+logging.config.dictConfig(
+    json.loads(open(config.get(section='Paths', option='logger_cfg_file'), 'r').read())
+    )
 logger = logging.getLogger(__name__)
 
-# checks for token keyfile on specified path
-TOKEN = str(list(token_setup.check_for_token())[0])
+if path.exists(config.get(section='Main', option='key_file')):
+    token = open(
+        file=config.get(section='Main', option='key_file'),
+        mode='r').readlines()[0]
+    logger.info('Keyfile found and loaded')
 
-intents = discord.Intents.default()
+intents = discord.Intents()
 intents.message_content = True
 
-
-bot = bridge.Bot(command_prefix = config.get('Main Settings', 'command_prefix'), intents = intents)
-#bot.remove_command('help')
-
-if EXTENSIONS != []:
-    for extension in EXTENSIONS:
-        try:
-            bot.load_extension(extension)
-        except Exception as e:
-            logger.error('Failed to load extension: ' + extension)
-            logger.error(e)
-
-# ## Does not function yet ## / ## This was changed please use current version below ##
-#command_list = command_loader.scan_commands_dir()
-#if command_list != []:
-#    for command in command_list:
-#        try:
-#            bot.load_extension(command)
-#        except Exception as e:
-#            logger.error(f'Failed to load command: {command}')
-#            logger.error(e)
-
-scanned_dir = command_loader.scan_dir()
-command_list = scanned_dir[0]
-meta_list = scanned_dir[1]
-command_loader.load_commands(bot, command_list, meta_list)
-
-@bot.command()
-async def ping(ctx):
-    await ctx.send('**PONG!**')
-
-@bot.slash_command()
-async def ping(ctx):
-    await ctx.send('**PONG!** *Slash*')
-
-@bot.bridge_command()
-async def ping2(ctx):
-    await ctx.send('**PONG!** *Bridge*')
-
-bot.run(TOKEN)
+bot = bridge.Bot(command_prefix=config.get(section='Main', option='prefix'), intents=intents)
+bot.run(token)

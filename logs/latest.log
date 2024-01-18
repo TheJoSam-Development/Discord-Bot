@@ -1,0 +1,71 @@
+[13:59:24|06/12/2023(+0100)][main][INFO]Keyfile found and loaded
+[13:59:24|06/12/2023(+0100)][proactor_events][DEBUG]Using proactor: IocpProactor
+[13:59:24|06/12/2023(+0100)][state][WARNING]Guilds intent seems to be disabled. This may cause state related issues.
+[13:59:24|06/12/2023(+0100)][client][INFO]logging in using static token
+[13:59:24|06/12/2023(+0100)][http][DEBUG]GET https://discord.com/api/v10/users/@me with None has returned 401
+[13:59:24|06/12/2023(+0100)][client][INFO]Cleaning up tasks.
+[13:59:24|06/12/2023(+0100)][client][INFO]Closing the event loop.
+[14:31:05|06/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[14:31:41|06/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[14:32:13|06/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[14:32:32|06/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[14:32:42|06/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[14:32:48|06/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[11:45:30|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[11:54:31|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[11:56:37|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[11:56:42|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[11:57:00|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[11:57:59|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:00:34|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:01:02|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:06:36|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:07:21|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:10:05|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:10:12|07/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:10:12|07/12/2023(+0100)][key_setup][DEBUG]Key Generator finished key: te.json
+[22:42:58|08/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[22:42:58|08/12/2023(+0100)][key_setup][DEBUG]Key Generator finished key: ./test.key
+[23:01:08|08/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[12:56:15|16/12/2023(+0100)][main][INFO]Keyfile found and loaded
+[12:56:15|16/12/2023(+0100)][proactor_events][DEBUG]Using proactor: IocpProactor
+[12:56:15|16/12/2023(+0100)][state][WARNING]Guilds intent seems to be disabled. This may cause state related issues.
+[12:56:15|16/12/2023(+0100)][client][INFO]logging in using static token
+[12:56:15|16/12/2023(+0100)][http][DEBUG]GET https://discord.com/api/v10/users/@me with None has returned 401
+[12:56:15|16/12/2023(+0100)][client][INFO]Cleaning up tasks.
+[12:56:15|16/12/2023(+0100)][client][INFO]Closing the event loop.
+[13:03:19|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:03:48|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:04:02|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:04:36|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:04:56|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:14:52|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:17:00|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:17:38|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:17:52|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:19:44|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:20:37|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:21:19|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:21:28|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:21:45|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:21:53|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:21:54|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:23:05|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:23:07|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:24:52|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:24:56|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:25:42|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:25:51|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:32:15|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:32:15|16/12/2023(+0100)][key_setup][DEBUG]Key Generator finished key: data/keys/test.key
+[13:34:27|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:34:27|16/12/2023(+0100)][key_setup][DEBUG]Initialized encryption key
+[13:51:23|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:51:23|16/12/2023(+0100)][key_setup][INFO]Encryption enabled
+[13:51:23|16/12/2023(+0100)][key_setup][DEBUG]Initialized encryption key
+[13:53:55|16/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[13:53:55|16/12/2023(+0100)][key_setup][INFO]Encryption enabled
+[13:53:55|16/12/2023(+0100)][key_setup][DEBUG]Initialized encryption key
+[20:44:11|17/12/2023(+0100)][key_setup][INFO]Key Tools initiated
+[20:44:11|17/12/2023(+0100)][key_setup][INFO]Encryption enabled
+[20:44:11|17/12/2023(+0100)][key_setup][DEBUG]Generated encryption key
