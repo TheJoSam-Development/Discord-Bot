@@ -25,8 +25,7 @@ if path.exists(config.get(section='Main', option='key_file')):
         mode='r').readlines()[0]
     logger.info('Keyfile found and loaded')
 
-intents = discord.Intents()
-intents.message_content = True
+intents = discord.Intents.all()
 
 bot = bridge.Bot(command_prefix=config.get(section='Main', option='prefix'), intents=intents)
 bot.run(token)
